@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Cross_Engine" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Cross_Engine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics-d" />
+					<Add library="sfml-window-d" />
+					<Add library="sfml-system-d" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Cross_Engine" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="D:/cDependancies/SFML/SFML-2.5.1/include" />
+		</Compiler>
+		<Linker>
+			<Add library="mingw32" />
+			<Add library="user32" />
+			<Add library="gdi32" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add directory="D:/cDependancies/SFML/SFML-2.5.1/lib" />
+		</Linker>
+		<Unit filename="cb.bmp" />
+		<Unit filename="graphic/bsp.h" />
+		<Unit filename="graphic/d_struct_util.h" />
+		<Unit filename="graphic/datadef.h" />
+		<Unit filename="graphic/draw.cpp" />
+		<Unit filename="graphic/draw.h" />
+		<Unit filename="graphic/linearutil.cpp" />
+		<Unit filename="graphic/linearutil.h" />
+		<Unit filename="graphic/sector.cpp" />
+		<Unit filename="graphic/sector.h" />
+		<Unit filename="graphic/tables.cpp" />
+		<Unit filename="graphic/tables.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="mem/memory.cpp" />
+		<Unit filename="mem/memory.h" />
+		<Unit filename="utility/wrapper.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
