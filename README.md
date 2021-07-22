@@ -8,7 +8,7 @@ My first ever engine (and definitely not the last). Limitations and goals of sof
 
 # Features I plan on having:
 * Physics (collision detecting, explosions forces, maybe even some fancy gibbing)
-* Map desighner/editor, with an option to pick portal (moving walls n fancy stuff, at the cost or rendeering time) or BSP rendering (walls can only "move" vertially, but super fast rendering). Will have it's own file format
+* Map designer/editor, with an option to pick portal (moving walls n fancy stuff, at the cost or rendeering time) or BSP rendering (walls can only "move" vertially, but super fast rendering). Will have it's own file format
 * Objects and Sprites.
 * The engine will be like an API, allowing users to create their own objects using inheritance
 
