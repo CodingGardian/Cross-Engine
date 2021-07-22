@@ -5,7 +5,7 @@ My first ever engine (and definitely not the last). Limitations and goals of sof
 * Portal Rendering
 * Floors/Ceilings
 * Cleaning Up Code
-* z-buffering
+* Visible Surface Determination
 
 # Features I plan on having:
 * Physics (collision detecting, explosions forces, maybe even some fancy gibbing)
