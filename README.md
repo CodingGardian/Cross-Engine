@@ -18,3 +18,8 @@ My first ever engine (and definitely not the last). Limitations and goals of sof
 * I primarily use Algebra and Precalculus. Matricies are good, but by deriving formulas myself when I have the specific goals of the engine in mind, good ol' high school math with a drop of calculus can allow for some great optimizations. In fact the entire idea of the game engine is based upon the fact that algebreic calculation are fast to compute, and give a lot of options as to what you can do.
   * It is possible to think of 3D as a collection of infinite 2D planes along a z-axis, allowing for two equations connecting the x and z, and y and z planes. The equations connecting them are: z = mx + b and y = mz + b.
   * This makes it easy to calculate intersections between lines and points (representing walls and entities). Clipping become a matter of finding the intersection between the wall and the fov lines. (g_ClipLineToView). It also makes interpolation easier.
+
+
+
+# SFML
+   SFML (Simple and Fast Multimedia Library) - Copyright (c) Laurent Gomila
