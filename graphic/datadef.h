@@ -1,10 +1,12 @@
 #ifndef DATADEF_H
 #define DATADEF_H
 
-#define RENDER_SECTOR_LIMIT 255
+#define RENDER_SEGMENT_LIMIT 255
 
-typedef unsigned char byte; // 8 bits per pixel
+typedef unsigned char byte;
 typedef float angle;
+
+// defining structs used for this
 
 /*
 struct color {
@@ -24,7 +26,7 @@ struct screenpos {
 
 struct screenline { // a horizontal line on the screen
 	int x;
-	int y1, y2;
+	int upper, lower;
 };
 
 struct vector {
@@ -37,6 +39,10 @@ struct lineardata { // data that defines a linear line
 	float m, b; // y = mx + b
 };
 
+struct segarr { // a collection of segments
+	int* segs;
+	int size;
+};
 
 #define SD_PORTAL 1 // 00000001
 #define SD_VETEXSHARE 6 // 00000110 does the line share a vertex, and if so, with which point?
@@ -44,33 +50,51 @@ struct lineardata { // data that defines a linear line
 
 struct sidedef {
 	vertex p1, p2;
-	float height;
+	int backsector, frontsector;
 
-	byte flags; // portal? etc.
-	int sector; // the sector that the portal looks into, -1 if is not a portal
+	byte flags;
 };
 
-struct screenseg {
-	screenpos point[4];
+struct segarr;
+
+struct c_treenode { // special node for engine
+	int data;
+	int parent;
+	int left, right;
+
+	float** bbox; // only need two points because rectangles are great
+	// bbox is a pointer because it makes assigning easier
 };
 
 #define S_CONVEX 1
 
-struct sector {
+struct sector {          //    :(
 	float floorheight;
 	float celingheight;
 
-	byte flags; // is it convex? and two sided lines? etc.
-
-	sidedef* linedefs; // the lines that define the sector
-	byte count; // can have a max of 255 defined lines
+	segarr* segs; // the lines that are in the sector
 };
 
-extern sector* sectors; // all of the sectors in the map
-extern sidedef* sidedefs;
+struct screenclip { // used for checking visibility
+	int start, end;
+};
 
+extern sector* sectors; // sectors
+extern int sectorsize;
+
+extern segarr segmentarray;
+// all of the segments (created when making BSP trees, erased after everyting is done)
+extern sidedef* segments; // all of the segments
+extern int segsize;
+
+extern segarr* bounds; // the bounds for collision detection
+extern int boundsize;
+
+extern c_treenode* nodes; // the nodes of a bsp tree
+extern int nodesize;
 
 extern float Px, Py, Pz; // player pos
+extern vertex PlayerVer;
 extern angle Ptheta, fov, Pthetaneg; // angles
 extern float focallength; // scale for projection
 
