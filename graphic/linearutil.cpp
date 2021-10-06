@@ -1,6 +1,5 @@
 #include "linearutil.h"
 #include <cmath> // placeholder, will implement table later...
-#include "tables.h"
 #include <iostream>
 #include <cstring> // for memcpy
 

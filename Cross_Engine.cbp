@@ -54,6 +54,7 @@
 		<Unit filename="graphic/datadef.h" />
 		<Unit filename="graphic/draw.cpp" />
 		<Unit filename="graphic/draw.h" />
+		<Unit filename="graphic/funcdef.h" />
 		<Unit filename="graphic/linearutil.cpp" />
 		<Unit filename="graphic/linearutil.h" />
 		<Unit filename="graphic/sector.cpp" />
@@ -63,6 +64,9 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="mem/memory.cpp" />
 		<Unit filename="mem/memory.h" />
+		<Unit filename="utility/array.cpp" />
+		<Unit filename="utility/array.h" />
+		<Unit filename="utility/tables.h" />
 		<Unit filename="utility/wrapper.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

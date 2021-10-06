@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1626219627 source:d:\cprojects\codeblocks\cross_engine\main.cpp
+1626721449 source:d:\cprojects\codeblocks\cross_engine\main.cpp
 	<string.h>
 	<unistd.h>
 	<iostream>
@@ -8,7 +8,6 @@
 	"graphic/datadef.h"
 	"graphic/sector.h"
 	"graphic/draw.h"
-	"graphic/tables.h"
 	<SFML/Window.hpp>
 
 1625429243 d:\cdependancies\sfml\sfml-2.5.1\include\sfml\graphics.hpp
@@ -431,15 +430,14 @@
 	"datadef.h"
 	<SFML/Graphics.hpp>
 
-1626106942 d:\cprojects\codeblocks\cross_engine\graphic\datadef.h
+1626721309 d:\cprojects\codeblocks\cross_engine\graphic\datadef.h
 
 1626116755 d:\cprojects\codeblocks\cross_engine\graphic\linearutil.h
 	"datadef.h"
 
-1626219039 source:d:\cprojects\codeblocks\cross_engine\graphic\linearutil.cpp
+1626722309 source:d:\cprojects\codeblocks\cross_engine\graphic\linearutil.cpp
 	"linearutil.h"
 	<cmath>
-	"tables.h"
 	<iostream>
 	<cstring>
 

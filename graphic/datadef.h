@@ -48,9 +48,6 @@ struct sidedef {
 
 	byte flags; // portal? etc.
 	int sector; // the sector that the portal looks into, -1 if is not a portal
-
-	byte* top; // textures maybe
-	byte* bottom;
 };
 
 struct screenseg {
@@ -70,6 +67,8 @@ struct sector {
 };
 
 extern sector* sectors; // all of the sectors in the map
+extern sidedef* sidedefs;
+
 
 extern float Px, Py, Pz; // player pos
 extern angle Ptheta, fov, Pthetaneg; // angles
