@@ -1,3 +1,5 @@
+# Due to complications with other projects, this is on hiatus...
+
 # Cross-Engine Ver: 0.0.1
 My first ever engine (and definitely not the last). Limitations and goals of software is based off of John Carmacks DOOM 1993 engine. Written in C++ and SFML
 
