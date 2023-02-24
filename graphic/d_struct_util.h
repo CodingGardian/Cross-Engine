@@ -7,8 +7,6 @@
 // main.cpp
 // =====================================================================
 
-// I did this myself, so feel free to copy paste without worrying about
-// copyright claims coming to ruin your day
 
 #define LEAF 0x400
 #define BRANCH 0x100
