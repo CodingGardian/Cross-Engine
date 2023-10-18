@@ -1,6 +1,6 @@
 #include "bsp.h"
 #include "linearutil.h"
-#include "../utility/array.h"
+#include "array.h"
 #include <vector>
 #include <cmath>
 #include <iostream>
